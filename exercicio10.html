@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>exercicio10</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+    function somenteNumeros(num) {
+        var er = /[^0-9.]/;
+        er.lastIndex = 0;
+        var campo = num;
+        if (er.test(campo.value)) {
+          campo.value = "";
+        }
+    }
+	</script>
+</head>
+<body>
+	<form>
+	<input class="form-control input-sm" onkeyup="somenteNumeros(this);" maxlength="3" type="text"  ng-model="numero.valor" />
+	<input type="submit" name="valide">
+	</form>
+</body>
+</html>

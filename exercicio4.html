@@ -1,0 +1,58 @@
+<html lang="pt-br">
+
+<head>
+
+	<title>exercicio 4</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="">
+    <script type="text/javascript"></script>
+
+
+	<style>
+	</style>
+         <script>
+          function mostra(id){
+            if (document.getElementById(id).style.display =='block'){
+              document.getElementById(id).style.display = 'none';
+              document.getElementById('b'+ id).value="Mostar";
+            }else { document.getElementById(id).style.display ='block';
+            document.getElementById('b'+ id).value="Ocultar";
+            }
+          }
+         </script>
+
+
+
+
+</head>
+
+    <body>
+        <nav>
+          <ul>
+
+	       	<li>
+	           <a href="questao4.html">
+			               Voltar
+	           </a>
+            </li>
+        </nav>
+
+
+     			<div class="conteudo">
+     					<h3> Questão 4 </h3>
+           
+               <br>
+
+                  <div id="txt1" class="hidden">
+                        Texto 1 <br> Aula 1 - JavaScript - 07/03/2019.
+                  </div>
+
+                    <br>
+
+                    <input id="btxt1" type="button"  value ="Mostrar" onClick="mostra('txt1')" />
+
+
+
+				</div>
+</body>   
+</html>

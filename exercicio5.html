@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>exercicio5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="screen" href="">
+  <style type="text/css">
+    body{
+       background-color: plum;
+
+      }
+  </style>
+
+          <script type="text/javascript">
+          function validar(){
+            var senha = formulario.senha.value;
+            var rep_senha = formulario.rep_senha.value;
+        
+              if(senha == "" || senha.length <= 5){
+                alert('Preencha o campo senha com minimo 6-10 caracteres');
+                formulario.senha.focus();
+                return false;
+              }
+        
+                if(rep_senha == "" || rep_senha.length <= 5){
+                  alert('Preencha o campo senha com minimo 6-10 caracteres');
+                  formulario.rep_senha.focus();
+                  return false;
+                }
+        
+                  if (senha != rep_senha) {
+                    alert('Senhas diferentes');
+                    formulario.senha.focus();
+                    return false;
+                  }
+          }
+                  
+        </script>
+
+
+</head>
+      <body>
+            <nav>
+                  <ul>
+
+	       	             <li>
+	                         <a href="questao5.html">Voltar</a>
+                       </li>
+             </nav>
+
+
+
+     			<div class="conteudo">
+           
+                  
+                  <h2>Se cadastre no site</h2>
+                      <form name="formulario" action="#" method="POST">
+
+                          Login: <input type="text" name="nome" required ><br>
+                          Senha: <input type="password" name="senha" size="10" maxlength="10" required >
+                          Repetir Senha: <input type="password" name="rep_senha" size="10" maxlength="10" required >
+                  
+                          <input type="submit" value="Enviar" onclick="return validar()" >
+                      </form>
+
+
+				</div>
+    </body>
+</html>
